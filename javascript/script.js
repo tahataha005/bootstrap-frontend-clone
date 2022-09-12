@@ -6,6 +6,10 @@ window.onload = () => {
     const p4 = document.getElementById("p4")
     const p5 = document.getElementById("p5")
     const p6 = document.getElementById("p6")
+    const delHeader = document.getElementById("deleteHeader")
+    const topSection = document.getElementById("topSection")
+    const header = document.getElementById("header")
+
 
     p1.addEventListener("mouseenter",() =>{
         p1.style.opacity = '20%'
@@ -52,6 +56,12 @@ window.onload = () => {
     })
     p6.addEventListener("mouseleave",() =>{
         p6.style.opacity = '100%'
+    })
+
+
+    delHeader.addEventListener("click",() =>{
+        topSection.remove(header)
+
     })
 
 }
