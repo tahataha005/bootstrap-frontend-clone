@@ -6,3 +6,15 @@
     border-bottom-style: solid;
     border-bottom-color: red;
 }
+
+.overviewBtn{
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    margin: auto 10px;
+    color: silver;
+    background-color:white;
+    align-self: flex-start;
+    justify-content: center;
+    border: 0;
+}
