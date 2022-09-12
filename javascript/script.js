@@ -60,7 +60,7 @@ window.onload = () => {
 
 
     delHeader.addEventListener("click",() =>{
-        topSection.remove(header)
+        header.remove()
 
     })
 

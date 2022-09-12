@@ -154,3 +154,21 @@
 	width: 100%;
     border-radius: 10px;
 }
+
+.contactMeTitle{
+    margin: 100px 40px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(46, 68, 87);
+}
+
+.contactInputs{
+    width: 100%;
+    height: 35px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+
+
