@@ -184,3 +184,11 @@
     border-radius: 8px;
     align-self: flex-start;
 }
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: darksalmon;
+    color: rgb(255, 103, 86);
+}

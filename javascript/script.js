@@ -78,7 +78,7 @@ window.onload = () => {
 
             errorBox.innerHTML += "<p>Invalid Name(Minimum 3 characters)</p>"
         }
-        if("@" in emailfeilds.value){
+        if("@" in emailAdress){
             let emailfeilds = emailAdress.value.split("@")
 
             if(emailfeilds[0].length < 3 || emailfeilds[1].length < 5){
