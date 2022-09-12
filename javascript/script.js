@@ -7,8 +7,14 @@ window.onload = () => {
     const p5 = document.getElementById("p5")
     const p6 = document.getElementById("p6")
     const delHeader = document.getElementById("deleteHeader")
-    const topSection = document.getElementById("topSection")
     const header = document.getElementById("header")
+    const fullName = document.getElementById("fullName")
+    const emailAdress = document.getElementById("emailAdress")
+    const phoneNumber = document.getElementById("phoneNumber")
+    const message = document.getElementById("message")
+    const sendButton = document.getElementById("sendButton")
+
+
 
 
     p1.addEventListener("mouseenter",() =>{
