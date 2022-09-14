@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+.messageBody{
+    background-color: rgb(2, 189, 164);
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -80,6 +84,7 @@ a{
     width: 100%;
     height: 75px;
     display: flex;
+    flex-direction: row;
     background-color:rgb(46, 68, 87);
     justify-content: space-between;
 }
@@ -93,6 +98,9 @@ a{
 }
 
 .menuBtn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
     margin: 15px 40px;
     width: 80px;
     height: 45px;
@@ -120,6 +128,7 @@ a{
 }
 
 .menubarTitle{
+    display: flex;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: white;
@@ -229,9 +238,11 @@ a{
     margin: 20px;
     flex-grow: 1;
     min-width: 200px;
+    min-height: 150px;
     background-color: white;
     padding: 10px 15px;
     text-align: left;
+    border-radius: 10px;
 }
 
 .sender{
@@ -242,4 +253,23 @@ a{
 .messageContent{
     margin: 10px 0;
     font-size: 20px;
+}
+
+.backBtn{
+    margin: auto 10px;
+    width: 60px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(2, 189, 164);
+    color: white;
+}
+
+.backBtnText{
+    color: white;
+    font-size: 15px;
 }
