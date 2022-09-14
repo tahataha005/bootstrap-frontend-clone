@@ -71,8 +71,7 @@ window.onload = () => {
     })
 
 
-    sendButton.addEventListener("click",() => {})
-}
+    sendButton.addEventListener("click",() => {
         // errorBox.innerHTML = ""
         // if(fullName.value.length < 3){
 
@@ -110,3 +109,14 @@ window.onload = () => {
         // if (message.value.length<100){
         //     errorBox.append.innerHTML += "<p>Invalid message</p>"
         // }
+
+
+        fetch("http://localhost/backend/add_message.php",{
+            method:"POST",
+            body: new URLSearchParams({"full_name":name,"email":email,"phone_number":phone,"message":message})
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+    })
+
+}
