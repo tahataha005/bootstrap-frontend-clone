@@ -185,6 +185,13 @@
     align-self: flex-start;
 }
 
+.sent{
+    display: flex;
+    align-content: flex-start;
+    background-color:lightgreen;
+    color:darkgreen;
+}
+
 .error{
     display: flex;
     flex-direction: column;

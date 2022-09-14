@@ -14,7 +14,7 @@ window.onload = () => {
     const message = document.getElementById("message")
     const sendButton = document.getElementById("sendButton")
     const errorBox = document.getElementById("errorBox")
-
+    const sentBox = document.getElementById("sentBox")
 
 
     p1.addEventListener("mouseenter",() =>{
