@@ -8,13 +8,12 @@ window.onload = () => {
     const p6 = document.getElementById("p6")
     const delHeader = document.getElementById("deleteHeader")
     const header = document.getElementById("header")
-    const fullName = document.getElementById("fullName")
-    const emailAdress = document.getElementById("emailAdress")
-    const phoneNumber = document.getElementById("phoneNumber")
+    const name = document.getElementById("fullName")
+    const email = document.getElementById("emailAdress")
+    const phone = document.getElementById("phoneNumber")
     const message = document.getElementById("message")
     const sendButton = document.getElementById("sendButton")
     const errorBox = document.getElementById("errorBox")
-
 
 
 
@@ -72,45 +71,42 @@ window.onload = () => {
     })
 
 
-    sendButton.addEventListener("click",() => {
-        errorBox.innerHTML = ""
-        if(fullName.value.length < 3){
-
-            errorBox.innerHTML += "<p>Invalid Name(Minimum 3 characters)</p>"
-        }
-        if("@" in emailAdress){
-            let emailfeilds = emailAdress.value.split("@")
-
-            if(emailfeilds[0].length < 3 || emailfeilds[1].length < 5){
-
-                errorBox.innerHTML += "<p>Invalid email</p>"
-            }}
-
-        else{
-            errorBox.append.innerHTML += "<p>Invalid email</p>"
-        }
-
-        if("+961" in phoneNumber){
-            let p = phoneNumber.value.split("+961")
-            phone = p[1]
-
-            if(phone[1] == 3){
-                if (phone.length != 7){
-                    errorBox.append.innerHTML += "<p>Invalid phone number</p>"
-                }
-            }
-            else if(phone.length != 8) {
-                errorBox.append.innerHTML += "<p>Invalid phone number</p>"
-            }
-        }
-        else {
-            errorBox.append.innerHTML += "<p>Invalid phone number</p>"
-        }
-
-        if (message.value.length<100){
-            errorBox.append.innerHTML += "<p>Invalid message</p>"
-        }
-    })
+    sendButton.addEventListener("click",() => {})
 }
+        // errorBox.innerHTML = ""
+        // if(fullName.value.length < 3){
 
-    
+        //     errorBox.innerHTML += "<p>Invalid Name(Minimum 3 characters)</p>"
+        // }
+        // if("@" in email){
+        //     let emailfeilds = email.value.split("@")
+
+        //     if(emailfeilds[0].length < 3 || emailfeilds[1].length < 5){
+
+        //         errorBox.innerHTML += "<p>Invalid email</p>"
+        //     }}
+
+        // else{
+        //     errorBox.append.innerHTML += "<p>Invalid email</p>"
+        // }
+
+        // if("+961" in phoneNumber){
+        //     let p = phoneNumber.value.split("+961")
+        //     phone = p[1]
+
+        //     if(phone[1] == 3){
+        //         if (phone.length != 7){
+        //             errorBox.append.innerHTML += "<p>Invalid phone number</p>"
+        //         }
+        //     }
+        //     else if(phone.length != 8) {
+        //         errorBox.append.innerHTML += "<p>Invalid phone number</p>"
+        //     }
+        // }
+        // else {
+        //     errorBox.append.innerHTML += "<p>Invalid phone number</p>"
+        // }
+
+        // if (message.value.length<100){
+        //     errorBox.append.innerHTML += "<p>Invalid message</p>"
+        // }
