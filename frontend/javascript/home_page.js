@@ -113,7 +113,7 @@ window.onload = () => {
 
         fetch("http://localhost/backend/add_message.php",{
             method:"POST",
-            body: new URLSearchParams({"full_name":name,"email":email,"phone_number":phone,"message":message})
+            body: new URLSearchParams({"full_name":name.value,"email":email.value,"phone_number":phone.value,"message":message.value})
         })
         .then(response => response.json())
         .then(data => console.log(data))
