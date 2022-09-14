@@ -109,14 +109,18 @@ window.onload = () => {
         // if (message.value.length<100){
         //     errorBox.append.innerHTML += "<p>Invalid message</p>"
         // }
-
-
-        fetch("http://localhost/backend/add_message.php",{
-            method:"POST",
-            body: new URLSearchParams({"full_name":name.value,"email":email.value,"phone_number":phone.value,"message":message.value})
-        })
-        .then(response => response.json())
-        .then(data => console.log(data))
+        if (name.value.length == 0 || email.value.length == 0 || phone.value.length == 0 || message.value.length == 0){
+            errorBox.innerHTML = "<p>Please Enter ALL Feilds</p>"
+        }
+        else{
+            fetch("http://localhost/backend/add_message.php",{
+                method:"POST",
+                body: new URLSearchParams({"full_name":name.value,"email":email.value,"phone_number":phone.value,"message":message.value})
+            })
+            .then(response => response.json())
+            .then(data => 
+                sentBox.innerHTML = `<p>Sent Successfully</p>`)
+            }
     })
 
 }

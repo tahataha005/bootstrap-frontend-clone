@@ -21,7 +21,7 @@
     justify-content: space-between;
 }
 
-.headerrightsection{
+.flexrow{
     display: flex;
     flex-direction: row;
 }
@@ -174,8 +174,7 @@
 
 .messageButton{
     margin: 15px 40px;
-    width: 100px;
-    height: 60px;
+    padding: 15px 10px;
     color: white;
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -187,15 +186,22 @@
 
 .sent{
     display: flex;
-    align-content: flex-start;
-    background-color:lightgreen;
-    color:darkgreen;
+    padding:10px 15px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .error{
     display: flex;
     flex-direction: column;
+    padding:10px 15px;
     align-content: flex-start;
-    background-color: darksalmon;
+    background-color: rgb(255, 206, 190);
+    border-radius: 5px;
     color: rgb(255, 25, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
